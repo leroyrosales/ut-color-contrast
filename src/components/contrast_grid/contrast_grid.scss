@@ -230,7 +230,6 @@ td.es-contrast-grid__key-cell {
 .es-contrast-grid-key__label {
     align-items: center;
     display: flex;
-    font-size: $font-size-sm;
     margin-bottom: $spacing-xs;
 
     .es-contrast-grid__accessibility-label {
@@ -242,6 +241,3 @@ td.es-contrast-grid__key-cell {
     }
 }
 
-.es-contrast-grid-key__link {
-    font-size: $font-size-sm;
-}
