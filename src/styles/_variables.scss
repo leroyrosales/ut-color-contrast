@@ -34,6 +34,7 @@ $spacing-stack-default: 16px;
 
 $color-white:           #FFFFFF;
 $color-black:           #000000;
+$burnt-orange:         #bf5700;
 
 // Gray color numbers are based on the "B" value of the HEX code's HSB equivalent
 $color-gray-12:         #1E1E1E;
@@ -41,14 +42,14 @@ $color-gray-15:         #262626;
 $color-gray-20:         #323232;
 $color-gray-30:         #4D4D4D;
 $color-gray-53:         #888888;
-$color-gray-95:         #F3F1F1;
+$color-gray-95:         #EBECED;
 $color-orange:          #E76822;
 $color-orange-light:    #F57026;
 $color-blue:            #1E62AB;
 
 $color-text-default:    $color-gray-20;
 
-$color-link:            $color-blue;
+$color-link:            $burnt-orange;
 $color-link-hover:      darken($color-link, 20%);
 
 $drop-shadow-default: 0 2px 6px rgba($color-black, .3);
