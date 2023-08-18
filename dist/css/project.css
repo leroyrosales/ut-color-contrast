@@ -529,3 +529,8 @@ a {
   font-size: 14px;
   margin: 0;
   text-align: center; }
+
+table tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 1; }
