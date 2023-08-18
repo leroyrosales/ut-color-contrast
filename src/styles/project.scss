@@ -198,8 +198,8 @@ a {
     text-align: center;
 }
 
+table thead th:first-child,
 table tbody th {
     position: sticky;
     left: 0;
-    z-index: 1;
 }

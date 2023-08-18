@@ -207,30 +207,6 @@ module.exports = function (grunt) {
         files: ["src/svg/*.svg"],
         tasks: ["svg"],
       },
-      // project_assets: {
-      //     files: ['releases/latest/project/**/*'],
-      //     tasks: 'newer:copy:project_to_dist'
-      // },
-      // package_json: {
-      //     files: 'package.json',
-      //     tasks: ['set_project_data'] //re-render markup since it may reference the version number from package.json
-      // },
-      // tokens: {
-      //     files: 'src/library/base/tokens.yaml',
-      //     tasks: ['process_tokens_file']
-      // },
-      // nunjucks_content: {
-      //     files: ['src/docs/data/**/*.json', '!src/docs/data/auto-generated/all_data.json'], //If any of the content json files change (auto-generated or manually updated), re-render markup
-      //     tasks: ['set_nunjucks_global_data', 'markup']
-      // },
-      // project_images: {
-      //     files: ['src/library/base/images/**/*'],
-      //     tasks: 'newer:copy:project_images_to_release'
-      // },
-      // fonts: {
-      //     files: 'src/library/base/fonts/**/*',
-      //     tasks: 'webfonts'
-      // }
     },
   });
   grunt.registerTask("styles", ["sasslint", "sass", "postcss"]);
