@@ -245,7 +245,6 @@ EightShapes.ContrastGrid = (function () {
     truncateContrastDisplayValues();
     disableDragUi();
     enableDragUi();
-    svg4everybody(); // render icons on IE
     broadcastGridUpdate();
     setGridUiStatus();
   }
