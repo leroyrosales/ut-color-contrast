@@ -1,0 +1,258 @@
+{# DO NOT EDIT: The contents of this file are dynamically generated and will be overwritten #}
+{% macro code_snippet() %}
+    <div class="es-code-snippet">
+        <button class="es-code-snippet__hide-button es-button">
+            {{ icon(icon_name="close", class="es-code-snippet__hide-button-icon") }} 
+            <span class="es-code-snippet__hide-button-text">Hide Code</span>
+        </button>
+        <div class="es-code-snippet__copy-header">
+            <label class="es-code-snippet__label">Persistent URL</label>        
+            <a href="#" class="es-code-snippet__copy-button" data-clipboard-target="#es-code-snippet__persistent-url">
+                {{ icon(icon_name="clipboard", class="es-code-snippet__copy-button-icon") }}
+                <span class="es-code-snippet__copy-button-text">Copy to Clipboard</span>
+                <span class="es-code-snippet__copy-response">Press Ctrl + C to copy</span>
+            </a>
+        </div>
+        <input id="es-code-snippet__persistent-url" type="text" class="es-code-snippet__persistent-url" readonly="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+
+        <div class="es-code-snippet__copy-header">
+            <label class="es-code-snippet__label">Grid Code</label>
+            <a href="#" class="es-code-snippet__copy-button" data-clipboard-target="#es-code-snippet__code">
+                {{ icon(icon_name="clipboard", class="es-code-snippet__copy-button-icon") }}
+                <span class="es-code-snippet__copy-button-text">Copy to Clipboard</span>
+                <span class="es-code-snippet__copy-response">Press Ctrl + C to copy</span>
+            </a>
+        </div>
+        <div class="es-code-snippet__code-wrap">
+            
+            <pre id="es-code-snippet__code"><code class="language-markup">
+            </code></pre>
+            <div class="es-code-snippet__code-loading-wrap">
+                <div class="es-code-snippet__code-loading-message">
+                    {{ icon(icon_name="circle-o-notch", class="es-code-snippet__code-loading-icon") }}
+                    <label class="es-code-snippet__code-loading-text">Updating Code&hellip;</label>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro color_form() %}
+    <form method="GET" class="es-color-form">
+        <input type="hidden" name="version" value="1.1.0"/>
+        <div class="es-color-form__content">
+            <p class="es-color-form__copy">
+                Test many foreground and background color combos for compliance with <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG 2.0 minimum contrast</a>.
+            </p>
+            <p class="es-color-form__copy">
+                Include one color per line, with an optional comma-separated label.
+            </p>
+            <div class="es-color-form__field-wrapper es-color-form__field-wrapper--background-colors">
+                <label for="es-color-form__background-colors" class="es-color-form__label">Rows</label>
+                <textarea id="es-color-form__background-colors" name="background-colors" class="es-color-form__textarea" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Enter HEX color values, one color per line"></textarea>
+            </div>
+            <div class="es-color-form__field-wrapper">
+                <label for="es-color-form__foreground-colors" class="es-color-form__label">Rows &amp; Columns</label>
+                <textarea id="es-color-form__foreground-colors" name="foreground-colors" class="es-color-form__textarea" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Enter HEX color values, one color per line">
+# UT Brand Colors
+#BF5700, UT Burntorange 
+#AE4F00, UT Burntorange S10 
+#9F4700, UT Burntorange S20
+#FFFFFF, UT White
+#333F48, UT Charcoal
+#EBECED, UT Charcoal T20
+#C2C5C8, UT Charcoal T40
+#858C91, UT Charcoal T60
+#5A646B, UT Charcoal T80
+#1E262B, UT Charcoal S40
+#F8971F, UT Tangerine
+#FFD600, UT Sunshine
+#A6CD57, UT Cactus
+#579D42, UT Turtlepond
+#478136, UT Turtlepond S20
+#00A9B7, UT Turquoise
+#00808B, UT Turquoise S20
+#005F86, UT Bluebonnet
+#074D6A, UT Bluebonnet S20
+#9CADB7, UT Shade
+#F9FAFB, UT Shade T20
+#E6EBED, UT Shade T40
+#C4CDD4, UT Shade T60
+#7D8A92, UT Shade S20
+#5E686E, UT Shade S40
+#3E4549, UT Shade S60
+#D6D2C4, UT Limestone
+#FBFBF9, UT Limestone T20
+#F2F1ED, UT Limestone T40
+#E6E4DC, UT Limestone T60
+#ABA89E, UT Limestone S20
+#807E76, UT Limestone S40
+#56544E, UT Limestone S60
+#DF3200, UT Error Red
+</textarea>
+                <a href="#" class="es-color-form__show-background-colors">Use distinct rows &amp; columns values</a>
+                <a href="#" class="es-color-form__hide-background-colors">Use the same rows &amp; columns values</a>
+            </div>
+
+                <label class="es-color-form__label">Tile Size</label>
+                <div class="es-color-form__radio-button-group">
+                    <label for="es-color-form__tile-size--compact" class="es-color-form__radio-button">
+                        <input type="radio" class="es-color-form__radio-button-input" id="es-color-form__tile-size--compact" value="compact" name="es-color-form__tile-size" checked>
+                        <span class="es-color-form__radio-button-text">
+                            S<span class="es-color-form__radio-button-subtext">(80&times;80)</span>
+                        </span>
+                    </label>
+                    <label for="es-color-form__tile-size--regular" class="es-color-form__radio-button">
+                        <input type="radio" class="es-color-form__radio-button-input" id="es-color-form__tile-size--regular" value="regular" name="es-color-form__tile-size">
+                        <span class="es-color-form__radio-button-text">
+                            M<span class="es-color-form__radio-button-subtext">(100&times;100)</span>
+                        </span>
+                    </label>
+                    <label for="es-color-form__tile-size--large" class="es-color-form__radio-button">
+                        <input type="radio" class="es-color-form__radio-button-input" id="es-color-form__tile-size--large" value="large" name="es-color-form__tile-size">
+                        <span class="es-color-form__radio-button-text">
+                            L<span class="es-color-form__radio-button-subtext">(150&times;150)</span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="es-color-form__field-wrapper">
+                    <label class="es-color-form__label">Show</label>
+
+                    <div class="es-color-form__checkbox-group es-color-form__radio-button-group">
+                    <label for="es-color-form__show-contrast--aaa" class="es-color-form__radio-button">
+                        <input class="es-color-form__radio-button-input" type="checkbox" id="es-color-form__show-contrast--aaa" value="aaa" name="es-color-form__show-contrast">
+                        <span class="es-color-form__radio-button-text">
+                            AAA
+                        </span>
+                    </label>
+                    <label for="es-color-form__show-contrast--aa" class="es-color-form__radio-button">
+                        <input class="es-color-form__radio-button-input" type="checkbox" id="es-color-form__show-contrast--aa" value="aa" name="es-color-form__show-contrast">
+                        <span class="es-color-form__radio-button-text">
+                            AA
+                        </span>
+                    </label>
+                    <label for="es-color-form__show-contrast--aa18" class="es-color-form__radio-button">
+                        <input class="es-color-form__radio-button-input" type="checkbox" id="es-color-form__show-contrast--aa18" value="aa18" name="es-color-form__show-contrast">
+                        <span class="es-color-form__radio-button-text">
+                            AA18
+                        </span>
+                    </label>
+                    <label for="es-color-form__show-contrast--dnp" class="es-color-form__radio-button">
+                        <input class="es-color-form__radio-button-input" type="checkbox" id="es-color-form__show-contrast--dnp" value="dnp" name="es-color-form__show-contrast">
+                        <span class="es-color-form__radio-button-text">
+                            DNP
+                        </span>
+                    </label>
+                    </div>
+                </div>
+        </div>
+    </form>
+{% endmacro %}
+
+{% macro contrast_grid() %}
+    <div class="es-contrast-grid">
+        <div class="es-contrast-grid__inner">
+            <table class="es-contrast-grid__table">
+                <thead>
+                    <tr class="es-contrast-grid__foreground-key">
+                        <th>
+                            <div class="es-contrast-grid__key-swatch-spacer">
+                                <span class="es-contrast-grid__key-swatch-label es-contrast-grid__key-swatch-label--background">Background</span>
+                                <span class="es-contrast-grid__key-swatch-label es-contrast-grid__key-swatch-label--text">Text</span>
+                            </div>
+                        </th>
+                        <th id="es-contrast-grid__foreground-key-cell-template" class="es-contrast-grid__foreground-key-cell">
+                            <div class="es-contrast-grid__key-swatch es-contrast-grid__key-swatch--foreground">
+                                <div class="es-contrast-grid__key-swatch-label">
+                                    <div class="es-contrast-grid__key-swatch-label-text">
+                                        
+                                    </div>
+                                    <div class="es-contrast-grid__key-swatch-label-hex">
+                                        
+                                    </div>
+                                </div>
+                                <div class="es-contrast-grid__key-swatch-controls">
+                                    <a class="es-contrast-grid__key-swatch-remove" href="#">
+                                        {{ icon(icon_name="close", class="es-contrast-grid__key-swatch-remove-icon")}}
+                                    </a>
+                                    <span class="es-contrast-grid__key-swatch-drag-handle es-contrast-grid__key-swatch-drag-handle--column">
+                                        {{ icon(icon_name="grip-horizontal", class="es-contrast-grid__key-swatch-drag-handle-icon")}}
+                                    </span>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="es-contrast-grid__content">
+                    <tr id="es-contrast-grid__content-row-template" class="es-contrast-grid__content-row">
+                        <th class="es-contrast-grid__background-key-cell">
+                            <div class="es-contrast-grid__key-swatch es-contrast-grid__key-swatch--background">
+                                <div class="es-contrast-grid__key-swatch-label">
+                                    <div class="es-contrast-grid__key-swatch-label-text">
+                                        
+                                    </div>
+                                    <div class="es-contrast-grid__key-swatch-label-hex">
+                                        
+                                    </div>
+                                </div>
+                                <div class="es-contrast-grid__key-swatch-controls">
+                                    <a class="es-contrast-grid__key-swatch-remove" href="#">
+                                        {{ icon(icon_name="close", class="es-contrast-grid__key-swatch-remove-icon")}}
+                                    </a>
+                                    <span class="es-contrast-grid__key-swatch-drag-handle es-contrast-grid__key-swatch-drag-handle--row">
+                                        {{ icon(icon_name="grip", class="es-contrast-grid__key-swatch-drag-handle-icon")}}
+                                    </span>
+                                </div>
+                            </div>
+                        </th>
+                        <td id="es-contrast-grid__content-cell-template" class="es-contrast-grid__content-cell">
+                            <div class="es-contrast-grid__swatch">
+                                <span class="es-contrast-grid__swatch-demo-text">Text</span>
+                                <div class="es-contrast-grid__swatch-stats">
+                                    <span class="es-contrast-grid__accessibility-label"></span>
+                                    <span class="es-contrast-grid__contrast-ratio"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="es-contrast-grid__key">
+                    <tr class="es-contrast-grid__key-row">
+                        <td class="es-contrast-grid__key-cell">
+                            <div class="es-contrast-grid-key">
+                                <div class="es-contrast-grid-key__column">
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aaa">AAA</span> Pass, AAA (7+)
+                                    </div>
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aa">AA</span> Pass, AA (4.5+)
+                                    </div>
+                                </div>
+                                <div class="es-contrast-grid-key__column">
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aa18">AA18</span> Pass, Large Text Only (3+)
+                                    </div>
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--dnp">DNP</span> Does Not Pass
+                                    </div>
+                                </div>
+                                <a class="es-contrast-grid-key__link" href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">About WCAG 2.0 contrast</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <style class="es-contrast-grid-styles">
+            {% include 'contrast_grid.css' %}
+        </style>
+    </div>
+{% endmacro %}
+
+{% macro icon(icon_name="twitter", class=false) %}
+  <svg class="icon-{{icon_name}}{{ ' ' + class if class }}">
+    <use xlink:href="svg/contrast-grid.svg#{{icon_name}}"></use>
+  </svg>
+{% endmacro %}
