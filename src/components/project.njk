@@ -128,7 +128,7 @@
                     </label>
                 </div>
 
-                <div class="es-color-form__field-wrapper">
+                <div>
                     <label class="es-color-form__label">Show</label>
 
                     <div class="es-color-form__checkbox-group es-color-form__radio-button-group">
@@ -165,6 +165,33 @@
 {% macro contrast_grid() %}
     <div class="es-contrast-grid">
         <div class="es-contrast-grid__inner">
+            <table width="100%" style="margin-bottom: 1rem;">
+                <tbody class="es-contrast-grid__key">
+                    <tr class="es-contrast-grid__key-row">
+                        <td class="es-contrast-grid__key-cell">
+                            <div class="es-contrast-grid-key">
+                                <div class="es-contrast-grid-key__column">
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aaa">AAA</span> Pass, AAA (7+)
+                                    </div>
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aa">AA</span> Pass, AA (4.5+)
+                                    </div>
+                                </div>
+                                <div class="es-contrast-grid-key__column">
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aa18">AA18</span> Pass, Large Text Only (3+)
+                                    </div>
+                                    <div class="es-contrast-grid-key__label">
+                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--dnp">DNP</span> Does Not Pass
+                                    </div>
+                                </div>
+                                <a class="es-contrast-grid-key__link" href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">About WCAG 2.0 contrast</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <table class="es-contrast-grid__table">
                 <thead>
                     <tr class="es-contrast-grid__foreground-key">
@@ -225,31 +252,6 @@
                                     <span class="es-contrast-grid__accessibility-label"></span>
                                     <span class="es-contrast-grid__contrast-ratio"></span>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody class="es-contrast-grid__key">
-                    <tr class="es-contrast-grid__key-row">
-                        <td class="es-contrast-grid__key-cell">
-                            <div class="es-contrast-grid-key">
-                                <div class="es-contrast-grid-key__column">
-                                    <div class="es-contrast-grid-key__label">
-                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aaa">AAA</span> Pass, AAA (7+)
-                                    </div>
-                                    <div class="es-contrast-grid-key__label">
-                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aa">AA</span> Pass, AA (4.5+)
-                                    </div>
-                                </div>
-                                <div class="es-contrast-grid-key__column">
-                                    <div class="es-contrast-grid-key__label">
-                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--aa18">AA18</span> Pass, Large Text Only (3+)
-                                    </div>
-                                    <div class="es-contrast-grid-key__label">
-                                        <span class="es-contrast-grid__accessibility-label es-contrast-grid__accessibility-label--dnp">DNP</span> Does Not Pass
-                                    </div>
-                                </div>
-                                <a class="es-contrast-grid-key__link" href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">About WCAG 2.0 contrast</a>
                             </div>
                         </td>
                     </tr>

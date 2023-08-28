@@ -9,7 +9,7 @@
 .es-color-form__textarea {
     border-radius: $spacing-xs / 2;
     border: solid 1px $color-gray-53;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Libre Franklin', sans-serif;
     font-size: $font-size-default;
     height: 200px;
     padding: $spacing-xs;
@@ -56,7 +56,7 @@
 }
 
 .es-color-form__radio-button-text {
-    background-color: darken($color-gray-95, 10%);
+    background-color: #C2C5C8;
     border-right: solid 1px $color-gray-53;
     color: $color-black;
     cursor: pointer;

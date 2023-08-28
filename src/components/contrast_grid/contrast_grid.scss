@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .es-contrast-grid {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .es-contrast-grid {
@@ -33,23 +33,20 @@
 }
 
 .es-contrast-grid__accessibility-label {
-    background: #ccc;
+    background: #EBECED;
     border-radius: 4px;
     display: inline-block;
-    color: #000;
-    font-size: $font-size-xs;
-    padding: 2px 4px;
+    padding: 4px 8px;
     text-align: center;
-    width: 36px;
 }
 
 .es-contrast-grid__accessibility-label--dnp {
-    background: #EE0000;
+    background: #DF3200;
     color: $color-white;
 }
 
 .es-contrast-grid__accessibility-label--aa18 {
-    background: #CFB317;
+    background: #FFD600;
 }
 
 .es-contrast-grid__swatch {
@@ -212,6 +209,7 @@ td.es-contrast-grid__key-cell {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: $spacing-sm;
+    width: 90%
 }
 
 .es-contrast-grid__key-cell[colspan="1"],
