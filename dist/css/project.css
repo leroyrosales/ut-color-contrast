@@ -29,7 +29,7 @@
   width: 14px; }
 
 .es-code-snippet__persistent-url {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   margin-bottom: 64px;
   padding: 8px;
@@ -41,7 +41,7 @@
   margin-right: 15px; }
 
 .es-code-snippet__copy-button-icon {
-  fill: #1E62AB;
+  fill: #bf5700;
   height: 16px;
   margin-right: 4px;
   width: 16px; }
@@ -62,7 +62,7 @@
   top: -2px; }
 
 .es-code-snippet__hide-snippet-icon {
-  fill: #1E62AB;
+  fill: #bf5700;
   height: 16px;
   width: 16px; }
 
@@ -171,7 +171,7 @@
 .es-color-form__textarea {
   border-radius: 4px;
   border: solid 1px #888888;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   height: 200px;
   padding: 8px;
@@ -207,7 +207,7 @@
     font-style: italic; }
 
 .es-color-form__radio-button-text {
-  background-color: #dbd6d6;
+  background-color: #C2C5C8;
   border-right: solid 1px #888888;
   color: #000000;
   cursor: pointer;
@@ -216,7 +216,7 @@
   padding: 8px;
   width: 100%; }
   .es-color-form__radio-button-input:checked + .es-color-form__radio-button-text {
-    background-color: #4D4D4D;
+    background-color: #333F48;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
     color: #FFFFFF; }
   .es-color-form__radio-button:last-child .es-color-form__radio-button-text {
@@ -224,9 +224,6 @@
     border-right: 0; }
   .es-color-form__radio-button:first-child .es-color-form__radio-button-text {
     border-radius: 4px 0 0 4px; }
-
-.es-color-form__content {
-  margin-bottom: 32px; }
 
 .es-color-form__field-wrapper--background-colors {
   display: none; }
@@ -376,7 +373,7 @@
 html,
 body {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
   margin: 0;
   min-height: 100vh;
@@ -388,10 +385,10 @@ body {
   box-sizing: inherit; }
 
 a {
-  color: #1E62AB;
+  color: #bf5700;
   text-decoration: none; }
   a:hover {
-    color: #0f3054; }
+    color: #592900; }
 
 .es-web-tool__flex-container {
   display: flex;
@@ -422,7 +419,7 @@ a {
     display: none; }
 
 .es-web-tool__sidebar {
-  background: #F3F1F1;
+  background: #EBECED;
   flex: 0 0 320px; }
 
 .es-web-tool__title {
@@ -453,7 +450,7 @@ a {
 .es-web-tool__external-link {
   align-items: center;
   border-radius: 4px;
-  color: #1E62AB;
+  color: #bf5700;
   display: inline-flex;
   font-weight: 300;
   line-height: 1;
@@ -462,20 +459,20 @@ a {
     text-decoration: underline; }
 
 .es-web-tool__external-link-logo {
-  fill: #1E62AB;
+  fill: #bf5700;
   height: 20px;
   margin-right: 4px;
   width: 20px; }
 
 .es-button {
   align-items: center;
-  background: #1E62AB;
+  background: #bf5700;
   border: 0;
   border-radius: 4px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   font-weight: 400;
   justify-content: center;
@@ -484,7 +481,7 @@ a {
   text-align: center;
   text-decoration: none; }
   .es-button:hover {
-    background: #0f3054;
+    background: #592900;
     color: #FFFFFF;
     text-decoration: none; }
 
@@ -498,7 +495,7 @@ a {
   box-shadow: -3px 0 3px rgba(0, 0, 0, 0.15);
   flex: 1;
   max-width: calc(100vw - 310px);
-  padding: 32px 0 32px 32px; }
+  padding: 0 0 32px 32px; }
 
 .es-web-tool__sidebar-actions {
   padding: 0 26px 26px; }
@@ -518,7 +515,7 @@ a {
   margin-bottom: 32px; }
 
 .es-web-tool__external-link-separator {
-  background: #4D4D4D;
+  background: #333F48;
   border-radius: 50%;
   display: inline-flex;
   height: 6px;
@@ -533,4 +530,8 @@ a {
 table thead th:first-child,
 table tbody th {
   position: sticky;
-  left: 0; }
+  left: 0;
+  z-index: 3; }
+
+.es-color-form a {
+  color: #AE4F00; }
